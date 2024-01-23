@@ -3,50 +3,34 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Anton Yadchenko | Home page</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
 		<link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/style.css">
 		<link rel="icon" type="image/jpeg" href="anton_yadchenko.png" />
 		<script src="https://telegram.org/js/telegram-web-app.js"></script>
 		<script src="js/index.js"></script>
 	</head>
 	<body>
 		<div class="content">
-			<div class="intro">
-				<span>Hi there!</span><br/>
-				<span>My name is <span class="highlight">Anton Yadchenko</span> and I'm <span class="highlight">Junior Software Developer!</span><br/>
-				<span>Instead of many words look into my CV <a href="https://drive.google.com/open?id=1NiKWg8_zG96rLXA9r-4zo6bu-ZW5FJHl"><span class="highlight-red">here</span></a>.</span>
-			</div>
-			<table>
-				<tr>
-					<td rowspan="3">
-						<img src="anton_yadchenko.png" alt="Anton Yadchenko" title="Anton Yadchenko"/>
-					</td>
-					<td>
-						<span>skype:</span>
-					</td>
-					<td>
-						<a href="skype:antonfreedom5">antonfreedom5</a>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<span>email:</span>
-					</td>
-					<td>
-						<a href="mailto:antonfreedom5@gmail.com">antonfreedom5@gmail.com</a>
-					</td>
+			<form>
+				<h3>Новый заказ!</h3>
 
-				</tr>
-				<tr>
-					<td>
-						<span>linkedin:</span>
-					</td>
-					<td>
-						<a href="https://www.linkedin.com/in/anton-yadchenko">Anton Yadchenko</a>
-					</td>
+				<label for="machine">Выберите технику</label>
+				<input type="machine" placeholder="Выберите технику" id="machine">
 
-				</tr>
-			</table>
+				<label for="place">Место</label>
+				<input type="place" placeholder="Введите место" id="place">
+
+				<label for="date">Дата</label>
+				<input type="date" placeholder="Введите дату" id="date">
+
+				<label for="phone">Номер телефона</label>
+				<input type="phone" placeholder="Введите номер телефона" id="phone">
+
+			</form>
 		</div>
 	</body>
 </html>
