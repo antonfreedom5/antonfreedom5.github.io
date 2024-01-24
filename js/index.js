@@ -25,7 +25,9 @@ tg.onEvent('mainButtonClicked', function() {
 });
 
 tg.MainButton.onClick(function() {
-    tg.showAlert("Хорошо, ты нажал на главную кнопку.");
+    // tg.showAlert("Хорошо, ты нажал на главную кнопку.");
+    tg.sendData(JSON.stringify(getData()));
+    tg.close();
 });
 
 function getData() {
