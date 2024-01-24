@@ -24,6 +24,10 @@ tg.onEvent('mainButtonClicked', function() {
     //при клике на основную кнопку отправляем данные в строковом виде
 });
 
+tg.MainButton.onClick(function() {
+    tg.showAlert("Хорошо, ты нажал на главную кнопку.");
+});
+
 function getData() {
     const selectedMachine = document.querySelector('input[name="rate"]:checked').value;
     const place = document.getElementById('place');
