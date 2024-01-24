@@ -1,7 +1,8 @@
 body{
 	color: var(--tg-theme-text-color);
 	background-color:  var(--tg-theme-bg-color);
-	background-color: #080710;
+	font-family: "Comfortaa", sans-serif;
+	background-color: black;
 }
 
 .content {
@@ -45,13 +46,6 @@ option {
 ::placeholder{
 	color: #e5e5e5;
 }
-
-/* Extras */
-a:visited{color:#888}
-a{color:#444;text-decoration:none;}
-p{margin-bottom:.3em;}
-* { font-family:monospace; }
-span.cc{ color:#6d84b4 }
 
 /* HIDE RADIO */
 [type=radio] {
