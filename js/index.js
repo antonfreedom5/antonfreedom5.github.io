@@ -17,17 +17,17 @@ tg.MainButton.show();
 
 console.log(tg.initData);
 
-tg.onEvent('mainButtonClicked', function() {
-    tg.showAlert("Хорошо")
-    tg.sendData('JSON.stringify(getData())');
-    tg.close();
-    //при клике на основную кнопку отправляем данные в строковом виде
-});
+// tg.onEvent('mainButtonClicked', function() {
+//     tg.showAlert("Хорошо")
+//     tg.sendData(JSON.stringify(getData()));
+//     tg.close();
+//     //при клике на основную кнопку отправляем данные в строковом виде
+// });
 
 tg.MainButton.onClick(function() {
-    tg.close();
+    // tg.close();
     // tg.showAlert("Хорошо, ты нажал на главную кнопку.");
-    tg.sendData('JSON.stringify(getData())');
+    tg.sendData(JSON.stringify(getData()));
     tg.close();
 });
 
