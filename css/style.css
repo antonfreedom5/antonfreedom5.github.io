@@ -85,7 +85,7 @@ span.cc{ color:#6d84b4 }
 	cursor: pointer;
 	filter: grayscale(100%);
 	transition: all 200ms ease-in;
-	height: 200px;
+	height: 150px;
 }
 
 .carousel {
