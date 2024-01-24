@@ -33,8 +33,8 @@ tg.MainButton.onClick(function() {
 
 function getData() {
     const selectedMachine = document.querySelector('input[name="rate"]:checked').value;
-    const place = document.getElementById('place');
-    const phone = document.getElementById('phone');
-    const date = document.getElementById('date');
+    const place = document.getElementById('place').innerText;
+    const phone = document.getElementById('phone').innerText;
+    const date = document.getElementById('date').innerText;
     return { selectedMachine, place, phone, date };
 }
