@@ -26,7 +26,7 @@ console.log(tg.initData);
 
 tg.MainButton.onClick(function() {
     // tg.close();
-    // tg.showAlert("Хорошо, ты нажал на главную кнопку.");
+    tg.showAlert("Заявка оформлена. Водитель свяжется с Вами в течении 10 минут.");
     tg.sendData(JSON.stringify(getData()));
     tg.close();
 });
