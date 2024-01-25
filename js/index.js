@@ -32,9 +32,14 @@ tg.MainButton.onClick(function() {
 });
 
 function getData() {
-    const selectedMachine = document.querySelector('input[name="rate"]:checked').value;
-    const place = document.getElementById('place').innerText;
-    const phone = document.getElementById('phone').innerText;
-    const date = document.getElementById('date').innerText;
+    const selectedMachine = document.querySelector('input[name="machine"]:checked').value;
+    const place = document.getElementById('place').value;
+    const phone = document.getElementById('phone').value;
+    const date = document.getElementById('date').value;
     return { selectedMachine, place, phone, date };
 }
+//
+// const sendButton = document.getElementById('sendButton');
+// sendButton.addEventListener('click', () => {
+//     console.log(JSON.stringify(getData()));
+// })
